@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>Loginuser</servlet-name>
+        <servlet-class>com.ecommerce.servlet.Loginuser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Loginuser</servlet-name>
+        <url-pattern>/Loginuser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Registeruser</servlet-name>
+        <servlet-class>com.ecommerce.servlet.Registeruser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registeruser</servlet-name>
+        <url-pattern>/Registeruser</url-pattern>
+    </servlet-mapping>
+<servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.ecommerce.servlet.AdminLoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminLoginServlet</url-pattern>
+</servlet-mapping>
+
+   
+   <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.ecommerce.servlet.CartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+</servlet-mapping>
+
+   
+
+    <servlet>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <servlet-class>com.ecommerce.servlet.ProductDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <url-pattern>/product-detail</url-pattern>
+    </servlet-mapping>
+
+   
+    
+<servlet>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.ecommerce.servlet.ProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/ProductServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>AddProductServlet</servlet-class>
+        <multipart-config />
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddProductServlet</servlet-name>
+        <url-pattern>/addproduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>DeleteProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/deleteproduct</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+</web-app>

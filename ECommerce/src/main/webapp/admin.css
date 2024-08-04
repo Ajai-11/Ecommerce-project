@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Admin Layout */
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.admin-main {
+    display: flex;
+    flex: 1;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    background: white;
+}
+
+.nav-logo {
+    width: 200px;
+}
+
+.nav-profile {
+    width: 75px;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    width: 250px;
+    background: white;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: #f6f6f6;
+    gap: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #454545;
+}
+
+.sidebar-item img {
+    width: 30px;
+}
+
+/* Add Product */
+.add-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+.addproduct-itemfield {
+    width: 100%;
+    color: #7b7b7b;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.addproduct-itemfield input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.addproduct-price {
+    display: flex;
+    gap: 40px;
+}
+
+.add-product-selector {
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b8d;
+    border-radius: 4px;
+}
+
+.addproduct-thumbnail-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px 0px;
+}
+
+.addproduct-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    background: #6079ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* List Product */
+.list-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 90%;
+    padding: 20px 50px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    background: white;
+    margin-left:5%;
+}
+/* Adjust the layout for the product list items */
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 100px 150px 100px 1fr 100px 80px; /* Adjust column sizes as needed */
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.listproduct-format-main img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.listproduct-format-main p, 
+.listproduct-format-main a {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.listproduct-format-main .description {
+    white-space: normal; /* Allows text to wrap */
+    word-wrap: break-word; /* Breaks long words to prevent overflow */
+    overflow: hidden; /* Prevents overflowing content */
+    max-width: 100%; /* Ensures the description takes available space */
+}
+
+/* Table header styling */
+.listproducts-format-main {
+    display: grid;
+    grid-template-columns: 100px 150px 100px 1fr 100px 80px; /* Match the grid with rows */
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0;
+}
+
+
+
+.listproduct-allproducts hr {
+    border: 1px solid #00000024;
+}
+
+
+.listproduct-product-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.listproduct-remove-icon {
+    text-decoration: none;
+    color: #ff0000;
+    cursor: pointer;
+}

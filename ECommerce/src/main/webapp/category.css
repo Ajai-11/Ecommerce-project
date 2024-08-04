@@ -1,0 +1,20 @@
+/* Category Banner */
+.category-banner {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+}
+
+.category-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.category-banner p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
